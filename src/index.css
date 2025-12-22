@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Global brand palette (used by Tailwind via @theme tokens) */
+@theme {
+  --color-brand-dark: #020617;   /* text on light backgrounds, dark sections */
+  --color-brand-light: #f9fafb;  /* cards / light text on dark */
+  --color-brand-cyan: #0ea5e9;   /* primary accent */
+  --color-brand-pink: #ec4899;   /* secondary accent */
+  --color-brand-purple: #6366f1; /* soft indigo accent */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  color: #020617;
+  background:
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.12), transparent 55%),
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.12), transparent 55%),
+    radial-gradient(circle at bottom, rgba(236, 72, 153, 0.08), transparent 55%),
+    #f3f4f6;
+}
+
+/* Custom Scrollbar – soft, light theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.7);
+  border-radius: 999px;
+  border: 2px solid #e5e7eb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}
