@@ -47,20 +47,20 @@ export default function Pricing() {
               </h3>
               <div className="flex flex-col items-center md:items-start gap-2 mb-5">
                 <div className="flex items-baseline gap-3">
-                  <span className="text-2xl text-slate-400 line-through">₹12,000</span>
+                  <span className="text-2xl text-slate-400 line-through">₹11,999</span>
                   <span className="px-3 py-1 text-xs font-semibold rounded-full bg-emerald-100 text-emerald-700">
                     Save ₹2,000
                   </span>
                 </div>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-black text-brand-cyan drop-shadow-sm">
-                    ₹10,000
+                    ₹9,999
                   </span>
                   <span className="text-slate-500 text-lg">all-in</span>
                 </div>
               </div>
               <p className="text-sm text-slate-600 mb-8 font-normal">
-                You get the full package for ₹10,000: domain, hosting, mobile-first design, WhatsApp/chat, maps, SEO-friendly setup,
+                You get the full package for ₹9,999 domain, hosting, mobile-first design, WhatsApp/chat, maps, SEO-friendly setup,
                 and social links. Final tweaks depend on pages/features you request.
               </p>
               <a
