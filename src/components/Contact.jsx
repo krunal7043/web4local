@@ -177,10 +177,10 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full px-8 py-4 bg-brand-cyan text-white rounded-full font-semibold text-lg transition-all duration-300 shadow-md ${
+                className={`lg:w-[40%] sm:w-full px-8 py-4 bg-brand-cyan text-white rounded-full font-semibold text-lg transition-all duration-300 ease-out shadow-md ${
                   isSubmitting
                     ? 'animate-pulse opacity-75 cursor-not-allowed'
-                    : 'hover:bg-brand-cyan/80 hover:scale-105 hover:shadow-xl'
+                    : 'hover:bg-brand-cyan/80 hover:brightness-95 hover:shadow-xl hover:shadow-brand-cyan/50 hover:scale-105'
                 }`}
               >
                 {isSubmitting ? 'Sending message...' : 'Submit Request'}
@@ -189,13 +189,13 @@ export default function Contact() {
             <div className="flex flex-col sm:flex-row justify-center gap-6 relative z-10 mt-8">
               <a
                 href="https://wa.me/917043754778?text=Hello%2C%20I%20am%20interested%20in%20building%20a%20website%20for%20my%20business."
-                className="flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] text-white rounded-full font-semibold text-lg hover:bg-[#128C7E] transition shadow-md shadow-emerald-500/40"
+                className="flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] text-white rounded-full font-semibold text-lg hover:bg-[#20b85a] hover:brightness-95 hover:shadow-xl hover:shadow-emerald-500/60 hover:scale-105 transition-all duration-300 ease-out shadow-md shadow-emerald-500/40"
               >
                 <span className="text-2xl">💬</span> Chat on WhatsApp
               </a>
               <a
                 href="tel:+917043754778"
-                className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-black transition shadow-md"
+                className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-full font-semibold text-lg hover:bg-slate-800 hover:brightness-110 hover:shadow-xl hover:shadow-slate-800/50 hover:scale-105 transition-all duration-300 ease-out shadow-md"
               >
                 <span className="text-2xl">📞</span> Call Now
               </a>

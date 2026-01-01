@@ -20,7 +20,7 @@ export default function Footer() {
           </span>
           <a
             href="#contact"
-            className="px-3 py-1 rounded-full border border-slate-200 text-slate-700 hover:border-brand-cyan/60 hover:text-brand-cyan hover:bg-brand-cyan/5 transition-all hover:scale-105"
+            className="px-3 py-1 rounded-full border border-slate-200 text-slate-700 hover:border-brand-cyan hover:text-brand-cyan hover:bg-brand-cyan/10 transition-colors duration-300"
           >
             Start your project
           </a>

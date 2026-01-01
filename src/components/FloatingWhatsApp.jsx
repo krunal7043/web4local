@@ -9,7 +9,7 @@ export default function FloatingWhatsApp() {
       initial={{ opacity: 0, y: 40, scale: 0.9 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.4, delay: 0.4 }}
-      className="fixed bottom-6 right-5 z-40 flex items-center gap-3 rounded-full bg-[#25D366] text-white shadow-xl shadow-emerald-500/30 px-4 py-3 md:px-5 md:py-3 hover:bg-[#128C7E] hover:scale-105 transition-transform"
+      className="fixed bottom-6 right-5 z-40 flex items-center gap-3 rounded-full bg-[#25D366] text-white shadow-xl shadow-emerald-500/30 px-4 py-3 md:px-5 md:py-3 hover:bg-[#20b85a] hover:brightness-95 hover:shadow-2xl hover:shadow-emerald-500/60 hover:scale-110 transition-all duration-300 ease-out"
     >
       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-2xl">
         💬

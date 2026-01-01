@@ -11,7 +11,7 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center gap-2 bg-white/70 border border-sky-100 text-sky-700 px-5 py-2 rounded-full text-xs font-semibold tracking-[0.2em] uppercase shadow-sm hover:bg-white/90 hover:border-sky-200 hover:shadow-md transition-all cursor-default">
+          <span className="inline-flex items-center gap-2 bg-white/70 border border-sky-100 text-sky-700 px-5 py-2 rounded-full text-xs font-semibold tracking-[0.2em] uppercase shadow-sm hover:bg-white hover:border-brand-cyan hover:text-brand-cyan transition-colors duration-300 cursor-default">
             <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
             Local business website specialist
           </span>
@@ -33,14 +33,14 @@ export default function Hero() {
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
             <a
               href="#pricing"
-              className="px-10 py-4 bg-brand-cyan text-brand-dark rounded-full font-semibold text-base md:text-lg shadow-lg shadow-brand-cyan/30 hover:shadow-brand-cyan/50 hover:-translate-y-0.5 hover:scale-[1.02] transition-transform inline-flex items-center justify-center gap-2"
+              className="px-10 py-4 bg-brand-cyan text-brand-dark rounded-full font-semibold text-base md:text-lg shadow-lg shadow-brand-cyan/30 hover:bg-brand-cyan/80 hover:brightness-95 hover:shadow-xl hover:shadow-brand-cyan/40 hover:scale-105 transition-all duration-300 ease-out inline-flex items-center justify-center gap-2"
             >
               <span className="text-lg">💰</span>
               <span>View Pricing</span>
             </a>
             <a
               href="#contact"
-              className="px-10 py-4 bg-white/80 text-slate-900 border border-slate-200 rounded-full font-semibold text-base md:text-lg hover:bg-white hover:border-brand-cyan/40 hover:text-brand-dark transition-colors shadow-sm inline-flex items-center justify-center gap-2"
+              className="px-10 py-4 bg-white/80 text-slate-900 border border-slate-200 rounded-full font-semibold text-base md:text-lg hover:bg-slate-100 hover:border-slate-300 hover:shadow-lg hover:shadow-slate-200/50 hover:scale-105 transition-all duration-300 ease-out shadow-sm inline-flex items-center justify-center gap-2"
             >
               <span className="text-lg">📞</span>
               <span>Call Now</span>

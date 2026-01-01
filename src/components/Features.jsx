@@ -60,12 +60,12 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="p-7 bg-white rounded-2xl hover:bg-sky-50/60 backdrop-blur-sm transition-all duration-300 border border-slate-100 hover:border-brand-cyan/40 group hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-100"
+              className="p-7 bg-white rounded-2xl hover:bg-sky-50/50 backdrop-blur-sm transition-all duration-300 border border-slate-100 hover:border-brand-cyan/60 group hover:shadow-xl"
             >
-              <div className="text-4xl mb-5 group-hover:scale-110 transition-transform duration-300 filter drop-shadow-[0_0_10px_rgba(148,163,184,0.4)]">
+              <div className="text-4xl mb-5 transition-all duration-300 filter drop-shadow-[0_0_10px_rgba(148,163,184,0.4)]">
                 {item.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-slate-900 group-hover:text-brand-cyan transition-colors">
+              <h3 className="text-lg font-semibold mb-2 text-slate-900 group-hover:text-brand-cyan transition-colors duration-300">
                 {item.title}
               </h3>
               <p className="text-slate-600 leading-relaxed text-sm">{item.desc}</p>

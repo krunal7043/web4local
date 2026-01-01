@@ -33,9 +33,8 @@ export default function Pricing() {
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          whileHover={{ y: -5 }}
           viewport={{ once: true }}
-          className="bg-white border border-slate-100 rounded-3xl p-8 md:p-12 shadow-lg hover:shadow-2xl hover:shadow-sky-100 transition-all duration-300 max-w-3xl mx-auto relative overflow-hidden hover:border-brand-cyan/50"
+          className="bg-white border border-slate-100 rounded-3xl p-8 md:p-12 shadow-lg hover:bg-sky-50/50 hover:border-brand-cyan/60 hover:shadow-xl transition-all duration-300 max-w-3xl mx-auto relative overflow-hidden"
         >
           {/* Shine effect */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-pink/10 blur-[80px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
@@ -67,7 +66,7 @@ export default function Pricing() {
                 href="https://wa.me/917043754778?text=Hello%2C%20I%20want%20to%20get%20started%20with%20the%20website%20package%20for%20my%20business."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full py-4 text-center rounded-xl font-semibold text-base md:text-lg bg-gradient-to-r from-brand-cyan to-brand-purple text-white shadow-md shadow-brand-cyan/40 hover:shadow-lg hover:shadow-brand-cyan/60 hover:brightness-110 hover:-translate-y-0.5 transition-transform transition-shadow"
+                className="block w-full py-4 text-center rounded-xl font-semibold text-base md:text-lg bg-gradient-to-r from-brand-cyan to-brand-purple text-white shadow-md shadow-brand-cyan/40 hover:brightness-90 hover:shadow-xl hover:shadow-brand-cyan/50 hover:scale-105 transition-all duration-300 ease-out"
               >
                 Get Started on WhatsApp
               </a>
@@ -84,9 +83,9 @@ export default function Pricing() {
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.05 }}
-                    className="flex items-center gap-3 text-slate-700 hover:text-brand-cyan transition-colors cursor-default"
+                    className="flex items-center gap-3 text-slate-700 hover:text-brand-cyan transition-colors duration-300 cursor-default"
                   >
-                    <span className="text-brand-cyan drop-shadow-[0_0_5px_rgba(56,189,248,0.8)] hover:scale-110 transition-transform">✓</span>
+                    <span className="text-brand-cyan hover:text-brand-pink transition-colors duration-300">✓</span>
                     <span className="font-light">{feat.replace('✅ ', '')}</span>
                   </motion.li>
                 ))}

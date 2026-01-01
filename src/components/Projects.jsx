@@ -31,7 +31,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-white rounded-2xl overflow-hidden border border-slate-100 hover:border-brand-cyan/40 transition-all duration-300 hover:shadow-2xl hover:shadow-sky-100"
+              className="group relative bg-white rounded-2xl overflow-hidden border border-slate-100 hover:bg-sky-50/50 hover:border-brand-cyan/60 hover:shadow-xl transition-all duration-300"
             >
               <div className="aspect-video overflow-hidden relative">
                 <div className="absolute inset-0 bg-slate-900/5 group-hover:bg-transparent transition-colors z-10" />
@@ -43,7 +43,7 @@ export default function Projects() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 mb-2 group-hover:text-brand-cyan transition-colors duration-300">
                   {project.title}
                 </h3>
                 <p className="text-slate-600 text-sm mb-4 line-clamp-3 leading-relaxed">
@@ -54,7 +54,7 @@ export default function Projects() {
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="text-xs px-2 py-1 rounded-md bg-slate-50 text-slate-600 border border-slate-100 hover:bg-brand-cyan/10 hover:border-brand-cyan/40 hover:text-brand-cyan transition-colors"
+                      className="text-xs px-2 py-1 rounded-md bg-slate-50 text-slate-600 border border-slate-100 hover:bg-brand-cyan/10 hover:border-brand-cyan hover:text-brand-cyan transition-colors duration-300"
                     >
                       {tech}
                     </span>
@@ -65,10 +65,10 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-brand-cyan font-medium hover:text-brand-pink transition-colors text-sm uppercase tracking-wide"
+                  className="inline-flex items-center gap-2 text-brand-cyan font-medium hover:text-brand-pink transition-colors duration-300 text-sm uppercase tracking-wide"
                 >
                   View Project 
-                  <span className="text-lg">→</span>
+                  <span className="text-lg group-hover:text-brand-pink transition-colors duration-300">→</span>
                 </a>
               </div>
             </motion.div>

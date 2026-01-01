@@ -42,7 +42,7 @@ export default function Navbar() {
             className="h-10 w-auto object-contain bg-white/10 rounded-lg p-1"
           />
           <div className="flex flex-col">
-            <span className="text-2xl font-bold text-brand-dark tracking-wide group-hover:text-brand-cyan transition-colors">
+            <span className="text-2xl font-bold text-brand-dark tracking-wide group-hover:text-brand-cyan transition-colors duration-300">
               web4local
             </span>
             <span className="text-xs text-slate-500 font-medium tracking-wider uppercase">
@@ -57,7 +57,7 @@ export default function Navbar() {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="hover:text-brand-cyan transition font-medium relative group"
+              className="hover:text-brand-cyan transition-colors duration-300 font-medium relative group"
             >
               {item}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-cyan transition-all group-hover:w-full" />
@@ -67,7 +67,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle Button */}
         <button
-          className="md:hidden text-brand-dark text-2xl focus:outline-none w-10 h-10 flex items-center justify-center bg-white/70 rounded-lg border border-slate-200 shadow-sm"
+          className="md:hidden text-brand-dark text-2xl focus:outline-none w-10 h-10 flex items-center justify-center bg-white/70 rounded-lg border border-slate-200 shadow-sm hover:bg-white hover:border-brand-cyan hover:text-brand-cyan transition-colors duration-300"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -99,7 +99,7 @@ export default function Navbar() {
                   transition={{ delay: index * 0.1 }}
                   href={`#${item.toLowerCase()}`}
                   onClick={() => setOpen(false)}
-                  className="text-2xl font-bold text-brand-dark hover:text-brand-cyan transition-colors tracking-wide"
+                  className="text-2xl font-bold text-brand-dark hover:text-brand-cyan transition-colors duration-300 tracking-wide"
                 >
                   {item}
                 </motion.a>
@@ -110,7 +110,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4 }}
                 href="tel:+917043754778"
-                className="mt-8 px-8 py-3 bg-brand-cyan text-brand-dark rounded-full font-bold text-lg hover:scale-105 transition transform shadow-lg shadow-brand-cyan/20"
+                className="mt-8 px-8 py-3 bg-brand-cyan text-brand-dark rounded-full font-bold text-lg hover:bg-brand-cyan/80 hover:brightness-95 hover:shadow-xl hover:shadow-brand-cyan/40 hover:scale-105 transition-all duration-300 ease-out shadow-lg shadow-brand-cyan/20"
               >
                 📞 Call Now
               </motion.a>
