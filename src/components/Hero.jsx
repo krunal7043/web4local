@@ -11,7 +11,7 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center gap-2 bg-white/70 border border-sky-100 text-sky-700 px-5 py-2 rounded-full text-xs font-semibold tracking-[0.2em] uppercase shadow-sm">
+          <span className="inline-flex items-center gap-2 bg-white/70 border border-sky-100 text-sky-700 px-5 py-2 rounded-full text-xs font-semibold tracking-[0.2em] uppercase shadow-sm hover:bg-white/90 hover:border-sky-200 hover:shadow-md transition-all cursor-default">
             <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
             Local business website specialist
           </span>

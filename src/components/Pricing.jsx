@@ -79,10 +79,16 @@ export default function Pricing() {
               <h4 className="font-bold text-lg mb-6 text-slate-900">Included Free</h4>
               <ul className="space-y-4">
                 {freebies.map((feat, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-700">
-                    <span className="text-brand-cyan drop-shadow-[0_0_5px_rgba(56,189,248,0.8)]">✓</span>
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.05 }}
+                    className="flex items-center gap-3 text-slate-700 hover:text-brand-cyan transition-colors cursor-default"
+                  >
+                    <span className="text-brand-cyan drop-shadow-[0_0_5px_rgba(56,189,248,0.8)] hover:scale-110 transition-transform">✓</span>
                     <span className="font-light">{feat.replace('✅ ', '')}</span>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>
