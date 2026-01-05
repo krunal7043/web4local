@@ -42,9 +42,14 @@ export default function Navbar() {
             className="h-10 w-auto object-contain bg-white/10 rounded-lg p-1"
           />
           <div className="flex flex-col">
-            <span className="text-2xl font-bold text-brand-dark tracking-wide group-hover:text-brand-cyan transition-colors duration-300">
-              web4local
-            </span>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-bold text-brand-dark tracking-wide group-hover:text-brand-cyan transition-colors duration-300">
+                web4local
+              </span>
+              <span className="text-xs font-semibold text-brand-cyan tracking-wide">
+                by Krunal
+              </span>
+            </div>
             <span className="text-xs text-slate-500 font-medium tracking-wider uppercase">
               Websites for local business
             </span>

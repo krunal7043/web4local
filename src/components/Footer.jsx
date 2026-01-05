@@ -10,10 +10,15 @@ export default function Footer() {
       className="bg-white/70 text-slate-500 py-8 border-t border-slate-200 mt-8"
     >
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-        <p className="text-center md:text-left">
-          © {new Date().getFullYear()} <span className="font-semibold text-slate-700">web4local</span>. Tailored websites for
-          local businesses.
-        </p>
+        <div className="text-center md:text-left">
+          <p>
+            © {new Date().getFullYear()} <span className="font-semibold text-slate-700">web4local</span>. Tailored websites for
+            local businesses.
+          </p>
+          <p className="text-xs mt-1 text-slate-400">
+            Developed with ❤️ by <span className="font-medium text-slate-600">Krunal</span> - Full Stack Developer
+          </p>
+        </div>
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs">
           <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-600">
             Based in India – working with shops worldwide

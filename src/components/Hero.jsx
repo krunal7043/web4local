@@ -30,6 +30,19 @@ export default function Hero() {
             from WhatsApp buttons to Google Maps and basic SEO.
           </p>
 
+          {/* Developer Credit */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-4 text-sm text-slate-500"
+          >
+            <span>Crafted by </span>
+            <span className="font-semibold text-brand-cyan">Krunal</span>
+            <span> - Developer</span>
+          </motion.div>
+
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
             <a
               href="#pricing"
